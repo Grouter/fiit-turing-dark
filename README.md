@@ -1,8 +1,11 @@
 # FIIT Turing Dark - MONOKAI
 FIIT Turing Dark theme for real programmers
 
+## How to use?
+1) Install all in `Browser Extensions` section
+2) Follow `To activate Turing Dark` section
+
 ## Browser Extentions
-Install:
 1) Stylus
 2) [Tampermonkey](https://tampermonkey.net/)
 
