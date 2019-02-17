@@ -10,5 +10,5 @@ FIIT Turing Dark theme for real programmers
 2) [Tampermonkey](https://tampermonkey.net/)
 
 ## To activate Turing Dark
-1) For CSS install [THIS](https://userstyles.org/styles/168928/fiit-turing-dark-description) using install button
-2) For JS install [THIS](https://openuserjs.org/scripts/Grouter/DarkTuring) using install button
+1) CSS (changes website text, background) install [THIS](https://userstyles.org/styles/168928/fiit-turing-dark-description) using install button
+2) JS (changes TURTING editor syntax highlighting) install [THIS](https://openuserjs.org/scripts/Grouter/DarkTuring) using install button
