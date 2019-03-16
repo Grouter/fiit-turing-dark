@@ -1,79 +1,91 @@
-@-moz-document url-prefix("https://www.turing.sk/fiit/zprpr2"), domain("93.184.70.44") {
-body {
-    background-color: #272822;
-}
+/* ==UserStyle==
+@name           DarkTuring
+@version        0.1
+@description    Welcome to the Dark Turing!
+@author         Mathew Chovan
+@license        GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
+@preprocessor   stylus
+==/UserStyle== */
 
-.tab-bar {
-    background-color: #222;
-}
+@-moz-document url-prefix("https://www.turing.sk/fiit"), domain("93.184.70.44") {
+    body {
+        background-color: #272822;
+        color: white;
+    }
+    
+    .tab-bar {
+        background-color: #222;
+    }
+    
+    .tab-content {
+        background-color: #222 !important;
+        color: rgb(214, 214, 214);
+    }
+    
+    /* ACTIVE TAB BAR COLOR */
+    .tab.active {
+        background: #569CD6;
+    }
+    
+    a[href] {
+        color: #569CD6;
+    }
+    
+    a[href]:hover {
+        color: #66D9EF;
+    }
+    
+    #-left-icon img {
+        filter: invert(60%);
+    }
+    
+    /* TOP LEFT BUTTONS */
+    #-action-save, #-action-run, #-action-stop, #-main-action-save {
+        background-color: rgb(214, 214, 214);
+        color: black;
+    }
+    
+    /* "Testy" LIST HOVER HIGHLIGHT */
+    .test:hover {
+        background-color: #111;
+        color: rgb(214, 214, 214);
+    }
+    
+    /* "Testy" RESULT HIGHLIGHTING (OK, FAIL...) */
+    .test.test-pass .test-result {
+        color: #A6E22E;
+    }
+    
+    .test.test-fail .test-result {
+        color: #F92672;
+    }
+    
+    /* RUN AND COMPILATION MESSAGES */
+    #-action-msg {
+        color: rgb(214, 214, 214);
+    }
+    
+    /* WINDOW SIZE ADJUSTMENT BARS */
+    .gutter {
+        background-color: #111;
+    }
+    
+    /* LEFT TAB "Zadanie" HIGHLIGHT KEY WORDS */
+    code {
+        color: #FD971F;
+    }
 
-.tab-content {
-    background-color: #222 !important;
-    color: rgb(214, 214, 214);
-}
-
-/* ACTIVE TAB BAR COLOR */
-.tab.active {
-    background: #569CD6;
-}
-
-a[href] {
-    color: #569CD6;
-}
-
-a[href]:hover {
-    color: #66D9EF;
-}
-
-#-left-icon img {
-    filter: invert(60%);
-}
-
-/* TOP LEFT BUTTONS */
-#-action-save, #-action-run, #-action-stop, #-main-action-save {
-    background-color: rgb(214, 214, 214);
-}
-
-/* "Testy" LIST HOVER HIGHLIGHT */
-.test:hover {
-    background-color: #111;
-    color: rgb(214, 214, 214);
-}
-
-/* "Testy" RESULT HIGHLIGHTING (OK, FAIL...) */
-.test.test-pass .test-result {
-    color: #A6E22E;
-}
-
-.test.test-fail .test-result {
-    color: #F92672;
-}
-
-/* RUN AND COMPILATION MESSAGES */
-#-action-msg {
-    color: rgb(214, 214, 214);
-}
-
-/* WINDOW SIZE ADJUSTMENT BARS */
-.gutter {
-    background-color: #111;
-}
-
-/* LEFT TAB "Zadanie" HIGHLIGHT KEY WORDS */
-code {
-    color: #FD971F;
-}
-pre {
-    color: #A6E22E;
-}
-
-/* RIGHT CORNER NAME */
-#-right-icon-name {
-    color: white;
-}
-
-/* LEFT BAR */
-#-left::after {
-    background: #272822;
-}
+    pre {
+        color: #A6E22E;
+    }
+    
+    /* RIGHT CORNER NAME */
+    #-right-icon-name {
+        color: white;
+    }
+    
+    /* LEFT BAR */
+    #-left::after {
+        background: #272822;
+    }
 }
