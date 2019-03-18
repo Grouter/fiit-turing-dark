@@ -16,13 +16,36 @@
         color: white;
     }
     
+    /* ========== Menu with exercises */
+    .user .-top .-title a {
+        color: rgb(214, 214, 214) !important;
+    }
+    
+    .user .-top .-menu-button {
+        color: rgb(214, 214, 214) !important;
+    }
+
+    .-top {
+        background: #222520 !important;
+    }
+    
+    .-top img {
+        filter: invert(60%);
+    }
+    
+    .-menu-button {
+        background-color: #222520 !important;
+    }
+    
+    /* ========== Coding view */
+    
     .tab-bar {
         background-color: #222;
     }
     
     .tab-content {
         background-color: #222 !important;
-        color: rgb(214, 214, 214);
+        color: rgb(214, 214, 214) !important;
     }
     
     /* ACTIVE TAB BAR COLOR */
@@ -43,8 +66,8 @@
     }
     
     /* TOP LEFT BUTTONS */
-    #-action-save, #-action-run, #-action-stop, #-main-action-save {
-        background-color: rgb(214, 214, 214);
+    #-action-save, #-action-run, #-action-stop, #-main-action-save, #-main-action-submit {
+        background-color: rgb(250, 250, 250);
         color: black;
     }
     
