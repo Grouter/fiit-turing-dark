@@ -8,10 +8,6 @@
 // @match        https://www.turing.sk/fiit/*
 // ==/UserScript==
 
-// ==OpenUserJS==
-// @author Grouter
-// ==/OpenUserJS==
-
 window.onload = function() {
     monaco.editor.setTheme('vs-dark');
 };
