@@ -10,5 +10,5 @@
 
 window.onload = function() {
     monaco.editor.setTheme('vs-dark');
-    monaco.editor.getModels()[0].updateOptions({tabSize: 8});
+    monaco.editor.getModels()[0].updateOptions({tabSize: 4});
 };
