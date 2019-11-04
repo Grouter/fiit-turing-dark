@@ -11,11 +11,62 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.turing.sk/fiit"), domain("93.184.70.44") {
+    
+    :root {
+        --foreground-dark: #222;
+        --background-dark: #333;
+        
+        --backround-dark-h: #888;
+        
+        --text-white: #aaa;
+        
+        --coding-tabs-bg: #4f8cc9;
+    }
+    
     body {
-        background-color: #272822;
+        background-color: #272822 !important;
         color: white;
     }
     
+    .btn {
+        background: var(--foreground-dark) !important;
+        color: #aaa;
+        box-shadow: none;
+        text-shadow: none;
+    }
+    
+    .btn:hover {
+        background: #333 !important;
+        color: #fff;
+        box-shadow: none;
+        text-shadow: none;
+    }
+    
+    /* ========== Login screen */
+    .public {
+        background: var(--background-dark) !important;
+    }
+    
+    .public .top {
+        background: var(--foreground-dark) !important;
+    }
+    
+    .login h2, p {
+        color: #ccc;
+    }
+    
+    .login #uid {
+        color: #ddd;
+        background: url("/login.png") no-repeat scroll 4px -103px #222;
+        box-shadow: none;
+    }
+    
+    .login #pwd {
+        color: #ddd;
+        background: url("/login.png") no-repeat scroll 4px -33px #222;
+        box-shadow: none;
+    }
+
     /* ========== Menu with exercises */
     .user .-top .-title a {
         color: rgb(214, 214, 214) !important;
@@ -38,9 +89,23 @@
     }
     
     /* ========== Coding view */
+
+    div {
+        color: var(--text-white);
+    }
+    
+    .tab {
+        background: var(--background-dark);
+        color: var(--text-white);
+    }
+    
+    .tab:hover {
+        background: var(--backround-dark-h);
+    }
     
     .tab-bar {
         background-color: #222;
+        border-bottom: 2px solid var(--coding-tabs-bg);;
     }
     
     .tab-content {
@@ -50,7 +115,7 @@
     
     /* ACTIVE TAB BAR COLOR */
     .tab.active {
-        background: #569CD6;
+        background: var(--coding-tabs-bg);
     }
     
     a[href] {
@@ -67,14 +132,13 @@
     
     /* TOP LEFT BUTTONS */
     #-action-save, #-action-run, #-action-stop, #-main-action-save, #-main-action-submit {
-        background-color: rgb(250, 250, 250);
         color: black;
     }
     
     /* "Testy" LIST HOVER HIGHLIGHT */
     .test:hover {
         background-color: #111;
-        color: rgb(214, 214, 214);
+        color: var(--text-white);
     }
     
     /* "Testy" RESULT HIGHLIGHTING (OK, FAIL...) */
@@ -88,7 +152,7 @@
     
     /* RUN AND COMPILATION MESSAGES */
     #-action-msg {
-        color: rgb(214, 214, 214);
+        color: var(--text-white);
     }
     
     /* WINDOW SIZE ADJUSTMENT BARS */
@@ -107,7 +171,7 @@
     
     /* RIGHT CORNER NAME */
     #-right-icon-name {
-        color: white;
+        color: var(--text-white);
     }
     
     /* LEFT BAR */
