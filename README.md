@@ -7,8 +7,8 @@ FIIT Turing Dark theme for real programmers
 Works only on STU FIIT Turing website
 
 ## Install Browser Extentions
-1) Stylus
-2) [Tampermonkey](https://tampermonkey.net/)
+1) Stylus (CSS)
+2) [Tampermonkey](https://tampermonkey.net/) (JS)
 
 ## Install Theme
 📦 [Install CSS](https://github.com/Grouter/fiit-turing-dark/raw/master/dark_turing.user.css) - dark UI
