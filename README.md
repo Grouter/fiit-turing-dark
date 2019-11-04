@@ -1,4 +1,7 @@
 # FIIT Turing Dark Theme
+
+## !!NOTICE: Some pages in new Turing redesign are using ONLY inline css, so it is hard to modify them. Thats why some pages may look "broken" or "bad".
+
 FIIT Turing Dark theme for real programmers
 
 Works only on STU FIIT Turing website
